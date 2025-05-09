@@ -42,7 +42,7 @@ public class Nakyma1Controller {
     }
 
 
-    private void SivunAvaus(String fxmlFile) {
+    private void EnterAvaus(String fxmlFile) {
     FXMLLoader avaaja = new FXMLLoader();
         Pane uusiSivu = avaaja.load();
 
