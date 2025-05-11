@@ -7,7 +7,9 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
-public class Nakyma2Controller extends Application {
+import java.io.IOException;
+
+public abstract class Nakyma2Controller extends Application {
 
     @FXML
     private void ToggleButton VuokrausPainike;
@@ -21,7 +23,7 @@ public class Nakyma2Controller extends Application {
     }
 
     @FXML
-    private void HakemistoPainike(){
+    private void HakemistoPainike() throws IOException {
         {
             HakemistoAvaus("MOKINVARAUS_NAKYMA3.1.fxml");
         };
@@ -38,7 +40,7 @@ public class Nakyma2Controller extends Application {
         Scene nakyma = new Scene(uusiSivu);
         ikkuna.setScene(nakyma);
     }
-    private void VuokraAvaus(String fxmlFile) {
+    private void HakemistoAvaus(String fxmlFile) throws IOException {
         FXMLLoader avaaja = new FXMLLoader();
         Pane uusiSivu = avaaja.load();
 
