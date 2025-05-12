@@ -55,6 +55,10 @@ public class Nakyma3_2Controller {
     @FXML
     ImageView OmatTiedot;
 
+    private void HaeMokki() {
+        Hakukentta.setText(Hakukentta.getText());
+    }
+
     public static void main(String[] args) {
     }
 

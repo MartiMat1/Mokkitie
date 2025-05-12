@@ -9,6 +9,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 public class Nakyma1Controller {
     @FXML
     private TextField SyottokenttaNimi;
@@ -22,11 +24,8 @@ public class Nakyma1Controller {
     @FXML
     private Button CancelPainike;
 
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }
-}
+
+
     @FXML
     private void Syottokentta1() {
     System.out.println("Nimi: "  + SyottokenttaNimi.getText());
@@ -37,12 +36,12 @@ public class Nakyma1Controller {
     }
 
     @FXML
-    private void EnterPainike() {
+    private void EnterPainike() throws IOException {
         SivunAvaus("MOKINVARAUS_NAKYMA2.fxml");
     }
 
 
-    private void EnterAvaus(String fxmlFile) {
+    private void SivunAvaus(String fxmlFile) throws IOException {
     FXMLLoader avaaja = new FXMLLoader();
         Pane uusiSivu = avaaja.load();
 
@@ -50,3 +49,4 @@ public class Nakyma1Controller {
         Scene nakyma = new Scene(uusiSivu);
         ikkuna.setScene(nakyma);
     }
+}
