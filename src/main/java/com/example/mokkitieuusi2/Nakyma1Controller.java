@@ -8,6 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 
 import java.io.IOException;
 
@@ -45,7 +46,7 @@ public class Nakyma1Controller {
     FXMLLoader avaaja = new FXMLLoader();
         Pane uusiSivu = avaaja.load();
 
-        Stage ikkuna = EnterPainike.getScene().getWindow();
+        Window ikkuna = EnterPainike.getScene().getWindow();
         Scene nakyma = new Scene(uusiSivu);
         ikkuna.setScene(nakyma);
     }

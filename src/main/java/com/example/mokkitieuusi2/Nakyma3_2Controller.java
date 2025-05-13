@@ -1,10 +1,17 @@
 package com.example.mokkitieuusi2;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+
 
 public class Nakyma3_2Controller {
 
@@ -55,10 +62,28 @@ public class Nakyma3_2Controller {
     @FXML
     ImageView OmatTiedot;
 
+
+    @FXML
+    private static void MokkiTiedotKuvat(ActionEvent event){
+        MokinTiedot("MOKINVARAUS_NAKYMA4.fxml");
+    }
+
     private void HaeMokki() {
         Hakukentta.setText(Hakukentta.getText());
     }
 
+    public void MokinVaraus (Stage stage) throws Exception {
+        FXMLLoader fxmlLoader = new FXMLLoader(Nakyma3_2Controller.class.getResource("MOKINVARAUS_NAKYMA3.2.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(),320,260);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public static void MokinTiedot(Stage stage) throws Exception {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MOKINVARAUS_NAKYMA4.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(),320,260);
+        stage.setScene(scene);
+        stage.show();
+    }
     public static void main(String[] args) {
     }
 

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <GridPane alignment="CENTER" prefHeight="595.0" prefWidth="595.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="MOKKITIEDOT_1" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#lisatiedotKlikkauksellaMokki1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MÖKKI.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MOKKITIEDOT_2" fitHeight="120.0" fitWidth="120.0" nodeOrientation="INHERIT" onMouseClicked="#lisatiedotKlikkauksellaMokki2" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@MÖKKI.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="136.0" fitWidth="154.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+            <ImageView fx:id="MOKKITIEDOT_3" fitHeight="120.0" fitWidth="120.0" layoutX="33.0" layoutY="8.0" onMouseClicked="#lisatiedotKlikkauksellaMokki3" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@MÖKKI.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MOKKITIEDOT_4" fitHeight="120.0" fitWidth="120.0" layoutX="33.0" layoutY="8.0" onMouseClicked="#lisatiedotKlikkauksellaMokki4" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@MÖKKI.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MOKKITIEDOT_5" fitHeight="120.0" fitWidth="120.0" layoutX="33.0" layoutY="142.0" onMouseClicked="#lisatiedotKlikkauksellaMokki5" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@MÖKKI.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MOKKITIEDOT_6" fitHeight="120.0" fitWidth="120.0" layoutX="33.0" layoutY="8.0" onMouseClicked="#lisatiedotKlikkauksellaMokki6" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@MÖKKI.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MOKKITIEDOT_7" fitHeight="120.0" fitWidth="120.0" layoutX="33.0" layoutY="8.0" onMouseClicked="#lisatiedotKlikkauksellaMokki7" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@MÖKKI.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MOKKITIEDOT_8" fitHeight="120.0" fitWidth="120.0" layoutX="33.0" layoutY="8.0" onMouseClicked="#lisatiedotKlikkauksellaMokki8" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@MÖKKI.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MOKKITIEDOT_9" fitHeight="120.0" fitWidth="120.0" layoutX="33.0" layoutY="8.0" onMouseClicked="#lisatiedotKlikkauksellaMokki9" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@MÖKKI.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets left="60.0" right="60.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+   <padding>
+      <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+   </padding>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="250.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <Label fx:id="filtteri1" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#KaytaFiltteria" prefWidth="200.0" text="Filtteri1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="filtteri2" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#KaytaFiltteria" prefWidth="200.0" text="Filtteri2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="filtteri3" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="28.0" onMouseClicked="#KaytaFiltteria" prefWidth="200.0" text="Filtteri3">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="filtteri4" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="45.0" onMouseClicked="#KaytaFiltteria" prefWidth="200.0" text="Filtteri4">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="filtteri5" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="63.0" onMouseClicked="#KaytaFiltteria" prefWidth="200.0" text="Filtteri5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="filtteri6" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="80.0" onMouseClicked="#KaytaFiltteria" prefWidth="200.0" text="Filtteri6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="KalenteriNakyma" fitHeight="70.0" fitWidth="70.0" onMouseClicked="#AvaaKalenteri" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="250.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../Pictures/GrayCalendarIcon.freepik.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="OmatTiedot" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/DefaultProfile.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

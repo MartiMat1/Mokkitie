@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="150.0" layoutY="14.0" prefHeight="40.0" prefWidth="300.0">
+         <children>
+            <TextField fx:id="Hakukentta" onAction="#HaeMokkeja" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="150.0" layoutY="61.0" prefHeight="200.0" prefWidth="300.0">
+         <children>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="285.0">
+                     <children>
+                        <GridPane alignment="TOP_CENTER" maxWidth="270.0" prefHeight="200.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="60.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                                 <image>
+                                    <Image url="@MÖKKI.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="60.0" fitWidth="80.0" layoutX="15.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                                 <image>
+                                    <Image url="@MÖKKI.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="60.0" fitWidth="80.0" layoutX="105.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                                 <image>
+                                    <Image url="@MÖKKI.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="60.0" fitWidth="80.0" layoutX="15.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                                 <image>
+                                    <Image url="@MÖKKI.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="60.0" fitWidth="80.0" layoutX="15.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                                 <image>
+                                    <Image url="@MÖKKI.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="60.0" fitWidth="80.0" layoutX="15.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                                 <image>
+                                    <Image url="@MÖKKI.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="60.0" fitWidth="80.0" layoutX="15.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                                 <image>
+                                    <Image url="@MÖKKI.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="60.0" fitWidth="80.0" layoutX="15.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                                 <image>
+                                    <Image url="@MÖKKI.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="60.0" fitWidth="80.0" layoutX="15.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                                 <image>
+                                    <Image url="@MÖKKI.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <GridPane layoutX="150.0" layoutY="283.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="filtteri1" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#KaytaFiltteria" prefWidth="100.0" text="Filtteri1" />
+            <Label fx:id="filtteri2" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="16.0" onMouseClicked="#KaytaFiltteria" prefWidth="100.0" text="Filtteri2" GridPane.columnIndex="1" />
+            <Label fx:id="filtteri3" alignment="CENTER" contentDisplay="CENTER" layoutX="110.0" layoutY="16.0" onMouseClicked="#KaytaFiltteria" prefWidth="100.0" text="Filtteri3" GridPane.columnIndex="2" />
+            <Label fx:id="filtteri4" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="16.0" onMouseClicked="#KaytaFiltteria" prefWidth="100.0" text="Filtteri4" GridPane.rowIndex="1" />
+            <Label fx:id="filtteri5" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="47.0" onMouseClicked="#KaytaFiltteria" prefWidth="100.0" text="Filtteri5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="filtteri6" alignment="CENTER" contentDisplay="CENTER" layoutX="110.0" layoutY="47.0" onMouseClicked="#KaytaFiltteria" prefWidth="100.0" text="Filtteri6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="filtteri7" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="16.0" onMouseClicked="#KaytaFiltteria" prefWidth="100.0" text="Filtteri7" GridPane.rowIndex="2" />
+            <Label fx:id="filtteri8" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="77.0" onMouseClicked="#KaytaFiltteria" prefWidth="100.0" text="Filtteri8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="filtteri9" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="16.0" onMouseClicked="#KaytaFiltteria" prefWidth="100.0" text="Filtteri9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</Pane>
