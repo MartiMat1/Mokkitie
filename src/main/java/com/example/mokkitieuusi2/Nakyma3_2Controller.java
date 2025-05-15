@@ -12,6 +12,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 
 public class Nakyma3_2Controller {
 
@@ -64,8 +66,8 @@ public class Nakyma3_2Controller {
 
 
     @FXML
-    private static void MokkiTiedotKuvat(ActionEvent event){
-        MokinTiedot("MOKINVARAUS_NAKYMA4.fxml");
+    private void MokkiTiedotKuvat(ActionEvent event){
+        //MokinTiedot("MOKINVARAUS_NAKYMA4.fxml");
     }
 
     private void HaeMokki() {
@@ -78,11 +80,23 @@ public class Nakyma3_2Controller {
         stage.setScene(scene);
         stage.show();
     }
-    public static void MokinTiedot(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MOKINVARAUS_NAKYMA4.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(),320,260);
-        stage.setScene(scene);
-        stage.show();
+    //public void MokinTiedot(Stage stage) throws Exception {
+    //    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MOKINVARAUS_NAKYMA4.fxml"));
+    //    Scene scene = new Scene(fxmlLoader.load(),320,260);
+    //    stage.setScene(scene);
+    //    stage.show();
+    //}
+    public void MokinTiedot(String fxmlFileName, String title) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFileName));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setTitle(title);
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     public static void main(String[] args) {
     }

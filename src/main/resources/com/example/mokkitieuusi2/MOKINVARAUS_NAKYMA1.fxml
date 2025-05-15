@@ -28,7 +28,7 @@
             <Font size="17.0" />
          </font>
       </Text>
-      <Button layoutX="263.0" layoutY="329.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="ENTER" />
+      <Button fx:id="EnterPainike" layoutX="263.0" layoutY="329.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="ENTER" />
       <Button layoutX="348.0" layoutY="329.0" mnemonicParsing="false" text="CANCEL" />
    </children>
 </Pane>

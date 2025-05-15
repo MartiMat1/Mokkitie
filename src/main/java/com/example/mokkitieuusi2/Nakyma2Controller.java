@@ -6,55 +6,36 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 
 import java.io.IOException;
 
-public abstract class Nakyma2Controller extends Application {
+public class Nakyma2Controller {
 
-    @FXML private void ToggleButton VuokrausPainike;
-
-    @FXML private void ToggleButton HakemistoPainike;
+    @FXML private Button VuokrausPainike;
+    @FXML private Button HakemistoPainike;
 
     @FXML
-    private void VuokrausPainike() throws IOException {
+    private void VuokranAvaus(ActionEvent event) throws IOException {
         VuokraAvaus("MOKINVARAUS_NAKYMA3.2.fxml");
-
     }
 
     @FXML
-    //private void HakemistoPainike() throws IOException {
-    //    {
-    //        HakemistoAvaus("MOKINVARAUS_NAKYMA3.1.fxml");
-    //    };
-    //}
-
-
-
-
-    private void VuokraAvaus(String fxmlFile) throws IOException {
-        FXMLLoader avaaja = new FXMLLoader();
-        Pane uusiSivu = avaaja.load();
-
-        Stage ikkuna = VuokrausPainike.getScene().getWindow();
-        Scene nakyma = new Scene(uusiSivu);
-        ikkuna.setScene(nakyma);
-    }
-    private void HakemistoAvaus(String fxmlFile) throws IOException {
-        //FXMLLoader avaaja = new FXMLLoader();
-        //Pane uusiSivu = avaaja.load();
-
-        //Stage ikkuna = HakemistoPainike().getScene().getWindow();
-        //Scene nakyma = new Scene(uusiSivu);
-        //ikkuna.setScene(nakyma);
-
-        Parent root = FXMLLoader.load(getClass().getResource("MOKINVARAUS_NAKYMA3.1.fxml"));
-
+    private void HakemistoAvaus(ActionEvent event) throws IOException {
+        vaihdaNakyma("MOKINVARAUS_NAKYMA3.1.fxml", HakemistoPainike);
     }
 
-    @FXML
-    private void VuokranAvaus(ActionEvent event) {
-        VuokrausPainike.load();
+    private void VuokraAvaus(String fxml) throws IOException {
+        vaihdaNakyma(fxml, VuokrausPainike);
+    }
+
+    private void vaihdaNakyma(String fxmlTiedosto, Button painike) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlTiedosto));
+        Parent root = loader.load();
+        Stage stage = (Stage) painike.getScene().getWindow();
+        stage.setScene(new Scene(root));
     }
 }
